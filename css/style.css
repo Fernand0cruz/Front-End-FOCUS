@@ -5,7 +5,6 @@
     z-index: 999;
 }
 .navbar .nav{
-    max-width: 1280px;
     width: 95%;
     margin: 0 auto;
     padding: 10px;
@@ -280,6 +279,43 @@ footer{
 footer a{
     text-decoration: none;
     color: black;
+}
+
+
+
+@media(max-width: 600px){
+    .off-canva{
+        left: -70%;
+        width: 70%;
+        height: 100vh;
+    }
+    
+    .banner{    
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .banner .info{
+        width: 70%;
+    }
+    .banner .img-banner{ 
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .banner .img-banner img{
+        width: 70%;
+    } 
+    .slides .navigation-manual{
+        margin-top: 80px;
+    }
+    .slides .navigation-auto{
+        margin-top: 80px;
+    } 
+    
+    
+    
 }
 
 

@@ -10,7 +10,18 @@ function OpenOffCanvas(){
     CloseMenu.style.display = 'block'
 }
 function CloseOffCanvas(){
-    document.querySelector('.off-canva').style.left = '-30%'
-    CloseMenu.style.display = 'none'
-    OpenMenu.style.display = 'block'
+    
+    if (window.matchMedia("(max-width:600px)").matches) {
+        document.querySelector('.off-canva').style.left = '-70%'
+        CloseMenu.style.display = 'none'
+        OpenMenu.style.display = 'block'
+        /* a viewport tem pelo menos 800 pixels de largura */
+        // console.log('a viewport tem menos de 600 pixels de largura')
+      } else {
+          document.querySelector('.off-canva').style.left = '-30%'
+          CloseMenu.style.display = 'none'
+          OpenMenu.style.display = 'block'
+          /* a viewport menos que 800 pixels de largura */
+          // console.log('a viewport tem mais que 600 pixels de largura')
+    }
 }
